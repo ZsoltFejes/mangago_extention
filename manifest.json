@@ -9,13 +9,13 @@
         "default_icon": "icon.png"
     },
     "permissions": [
-     "activeTab"
+     "activeTab", "tabs"
     ],
     "content_scripts": [
         {
-            "matches": ["https://mangago.me/read-manga/*"],
+            "matches": ["https://www.mangago.me/read-manga/*"],
             "js": ["update_style.js"],
-            "run_at": "document_idle"
+            "run_at": "document_end"
         }
     ]
   }
